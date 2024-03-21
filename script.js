@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const calendarContainer = document.getElementById('calendar');
-    generateCalendar(calendarContainer);
-});
-
 //check the console for date click event
 //Fixed day highlight
 //Added previous month and next month view
