@@ -1,0 +1,15 @@
+body { font-family: Arial, sans-serif; padding: 10px; }
+.calendar-container { display: flex; flex-wrap: wrap; max-width: 100%; }
+.day { width: calc(100% / 7); text-align: center; padding: 5px; border: 1px solid #ccc; position: relative; min-height: 50px; box-sizing: border-box; }
+.day:hover { background-color: #f0f0f0; cursor: pointer; }
+.menu { display: none; position: absolute; left: 0; bottom: 100%; background-color: #fff; border: 1px solid #ccc; z-index: 1; white-space: nowrap; }
+.menu.active { display: block; }
+@media (max-width: 600px) {
+    .day { width: 14.28%; padding: 10px; min-height: 60px; font-size: 14px; }
+    .menu { width: 100%; left: -1px; right: -1px; bottom: -1px; }
+}
+
+/* Improve touch interaction */
+@media (hover: none) {
+    .day:hover { background-color: inherit; }
+}
