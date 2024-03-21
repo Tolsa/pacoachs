@@ -17,6 +17,7 @@ var maxDate = {
   3: new Date(new Date().setMonth(new Date().getMonth() + 9))
 }
 
+var $ = jQuery;
 var flatpickr = $('#calendar .placeholder').flatpickr({
   inline: true,
   minDate: 'today',
